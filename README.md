@@ -4,7 +4,7 @@
 
 # Portafolio de Ciencia de Datos – Franklin Manjarres
 
-Matemático en formación y científico de datos en desarrollo. Este portafolio presenta mis principales proyectos aplicados en regresión, clasificación y procesamiento de lenguaje natural (NLP), implementados con Python, R y herramientas modernas de ciencia de datos.
+Matemático. En proceso de formación como científico de datos,. Este portafolio presenta mis principales proyectos aplicados en regresión, clasificación y procesamiento de lenguaje natural (NLP), implementados con Python.
 
 ---
 
@@ -18,19 +18,17 @@ Matemático en formación y científico de datos en desarrollo. Este portafolio 
 
 ###  2. Predicción de precios inmobiliarios
 - **Descripción:** Predicción con regresión lineal y Huber, tratamiento de outliers y reducción del MAE.  
-- **Tecnologías:** Python · pandas · scikit-learn
 - **Repositorio:** [Ver proyecto](https://github.com/manjarresfranklin/PrediccionPreciosInmobiliarios)
 
 ---
 
 ###  3. Clasificación de reseñas de hoteles (NLP)
 - **Descripción:** Clasificación de sentimientos usando Word2Vec y una red neuronal LSTM.
-- **Tecnologías:** Python · Keras · Word2Vec · NLP
 - **Repositorio:** [Ver proyecto](https://github.com/manjarresfranklin/ClasificacionResenasHoteles)
 
 ---
 
-## 🛠️ Tecnologías y herramientas
+## 🛠 Tecnologías y herramientas
 
 Python · R · pandas · NumPy · scikit-learn · Keras · Jupyter · Word2Vec · LSTM · \LaTeX
 
