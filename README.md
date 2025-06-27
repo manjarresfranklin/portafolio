@@ -28,7 +28,7 @@ Matemático. En proceso de formación como científico de datos,. Este portafoli
 
 ---
 
-## 🛠 Tecnologías y herramientas
+## 🛠Tecnologías y herramientas
 
 Python · R · pandas · NumPy · scikit-learn · Keras · Jupyter · Word2Vec · LSTM · \LaTeX
 
