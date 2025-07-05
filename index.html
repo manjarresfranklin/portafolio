@@ -10,7 +10,6 @@
   <meta property="og:description" content="Proyectos aplicados en Machine Learning, Python, NLP y Deep Learning.">
   <meta property="og:url" content="https://franklinmanjarres.github.io/portafolio">
   <meta property="og:image" content="https://franklinmanjarres.github.io/portafolio/imgenpor.png" />
-
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -25,18 +24,18 @@
       padding: 30px;
     }
     h1 {
-      font-size: 1.4em;
+      font-size: 1.6em;
       margin-bottom: 0.2em;
     }
     h2 {
       font-weight: normal;
       color: #ccc;
-      margin-bottom: 1.2em;
+      margin-bottom: 1.5em;
     }
     .btn {
       display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
+      margin-top: 10px;
+      padding: 10px 20px;
       background: #1e90ff;
       color: white;
       text-decoration: none;
@@ -47,16 +46,35 @@
     .btn:hover {
       background: #0077cc;
     }
-    .proyecto {
-      margin-top: 2em;
-      margin-bottom: 2em;
+
+    .contenedor-proyectos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 40px;
     }
-    .proyecto p {
-      max-width: 700px;
-      margin: auto;
-      color: #ddd;
-      font-size: 0.95em;
-      line-height: 1.5;
+
+    .tarjeta {
+      background-color: #1b1b1b;
+      padding: 20px;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 0 10px #000;
+      text-align: center;
+    }
+
+    .tarjeta h3 {
+      margin-bottom: 10px;
+      color: #ffffff;
+      font-size: 1.1em;
+    }
+
+    .tarjeta p {
+      font-size: 0.9em;
+      color: #ccc;
+      margin-bottom: 15px;
+      line-height: 1.4;
     }
   </style>
 </head>
@@ -64,36 +82,30 @@
 
   <h1>Franklin Manjarres</h1>
   <h2>Portafolio de Ciencia de Datos</h2>
+  <p>Proyectos en regresión, clasificación y PLN con Python, R y Deep Learning.</p>
 
-  <p>Proyectos aplicados en regresión, clasificación y procesamiento de lenguaje natural usando Python, R y Deep Learning.</p>
+  <div class="contenedor-proyectos">
 
-  <div class="proyecto">
-    <a href="https://github.com/manjarresfranklin/DeteccionFraudeCanastas" class="btn">Detección de Fraude</a>
-    <p>
-      Se desarrolló un modelo con árboles de decisión y bosques aleatorios para detectar fraudes en canastas de compra. 
-      Se optimizaron los umbrales de clasificación para mejorar la sensibilidad, aunque con cierto costo en falsos positivos. 
-      El modelo final logró una exactitud del 89.97%. Se aplicó análisis de importancia de variables y limpieza masiva de datos.
-    </p>
-  </div>
+    <div class="tarjeta">
+      <h3>🔍 Detección de Fraude</h3>
+      <p>Modelo con árboles y Random Forest para detectar fraudes en compras. Precisión del 89.97%.</p>
+      <a href="https://github.com/manjarresfranklin/DeteccionFraudeCanastas" class="btn">Ver Proyecto</a>
+    </div>
 
-  <div class="proyecto">
-    <a href="https://github.com/manjarresfranklin/AnalisisPreciosInmobiliarios" class="btn">Predicción de Precios</a>
-    <p>
-      Se predijeron precios inmobiliarios usando regresión robusta (Huber) tras una cuidadosa selección de variables. 
-      Se imputaron valores faltantes y se detectaron outliers con impacto significativo. 
-      El modelo alcanzó un MAE de 169,465, destacando la influencia de variables como número de habitaciones y tipo de propiedad. 
-      Se garantizó interpretabilidad y robustez.
-    </p>
-  </div>
+    <div class="tarjeta">
+      <h3>🏠 Predicción de Precios</h3>
+      <p>Regresión robusta para estimar precios inmobiliarios. MAE: 169,465. Variables clave optimizadas.</p>
+      <a href="https://github.com/manjarresfranklin/AnalisisPreciosInmobiliarios" class="btn">Ver Proyecto</a>
+    </div>
 
-  <div class="proyecto">
-    <a href="https://github.com/manjarresfranklin/HotelReviewSentimentAnalysisLSTM" class="btn">Reseñas con LSTM</a>
-    <p>
-      Se entrenó una red neuronal LSTM con embeddings preentrenados para clasificar reseñas de hoteles como positivas o negativas. 
-      Se realizó preprocesamiento exhaustivo del texto y se optimizó la arquitectura para mejorar el rendimiento. 
-      El modelo fue evaluado con métricas como precisión y F1-score. Este proyecto aplica PLN y Deep Learning en texto real.
-    </p>
+    <div class="tarjeta">
+      <h3>💬 Reseñas con LSTM</h3>
+      <p>Clasificación de sentimientos en reseñas de hoteles usando LSTM y embeddings preentrenados.</p>
+      <a href="https://github.com/manjarresfranklin/HotelReviewSentimentAnalysisLSTM" class="btn">Ver Proyecto</a>
+    </div>
+
   </div>
 
 </body>
 </html>
+
