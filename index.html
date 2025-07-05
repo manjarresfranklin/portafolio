@@ -8,8 +8,8 @@
   <!-- Metadatos para LinkedIn -->
   <meta property="og:title" content="Portafolio de Ciencia de Datos – Franklin Manjarres">
   <meta property="og:description" content="Proyectos aplicados en Machine Learning, Python, NLP y Deep Learning.">
-<meta property="og:url" content="https://franklinmanjarres.github.io/portafolio">
-<meta property="og:image" content="https://franklinmanjarres.github.io/portafolio/imgenpor.png" />
+  <meta property="og:url" content="https://franklinmanjarres.github.io/portafolio">
+  <meta property="og:image" content="https://franklinmanjarres.github.io/portafolio/imgenpor.png" />
 
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
@@ -47,6 +47,23 @@
     .btn:hover {
       background: #0077cc;
     }
+    .proyecto {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+    .proyecto img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin: 1em auto;
+    }
+    .proyecto p {
+      max-width: 700px;
+      margin: auto;
+      color: #ddd;
+      font-size: 0.95em;
+      line-height: 1.5;
+    }
   </style>
 </head>
 <body>
@@ -56,9 +73,37 @@
 
   <p>Proyectos aplicados en regresión, clasificación y procesamiento de lenguaje natural usando Python, R y Deep Learning.</p>
 
-  <a href="https://github.com/manjarresfranklin/DeteccionFraudeCanastas" class="btn">Detección de Fraude</a>
-  <a href="https://github.com/manjarresfranklin/AnalisisPreciosInmobiliarios" class="btn">Predicción de Precios</a>
-  <a href="https://github.com/manjarresfranklin/HotelReviewSentimentAnalysisLSTM" class="btn">Reseñas con LSTM</a>
+  <div class="proyecto">
+    <a href="https://github.com/manjarresfranklin/DeteccionFraudeCanastas" class="btn">Detección de Fraude</a>
+    <img src="fraude.png" alt="Imagen de detección de fraude" />
+    <p>
+      Se desarrolló un modelo con árboles de decisión y bosques aleatorios para detectar fraudes en canastas de compra. 
+      Se optimizaron los umbrales de clasificación para mejorar la sensibilidad, aunque con cierto costo en falsos positivos. 
+      El modelo final logró una exactitud del 89.97%. Se aplicó análisis de importancia de variables y limpieza masiva de datos.
+    </p>
+  </div>
+
+  <div class="proyecto">
+    <a href="https://github.com/manjarresfranklin/AnalisisPreciosInmobiliarios" class="btn">Predicción de Precios</a>
+    <img src="regresion.png" alt="Imagen de predicción de precios" />
+    <p>
+      Se predijeron precios inmobiliarios usando regresión robusta (Huber) tras una cuidadosa selección de variables. 
+      Se imputaron valores faltantes y se detectaron outliers con impacto significativo. 
+      El modelo alcanzó un MAE de 169,465, destacando la influencia de variables como número de habitaciones y tipo de propiedad. 
+      Se garantizó interpretabilidad y robustez.
+    </p>
+  </div>
+
+  <div class="proyecto">
+    <a href="https://github.com/manjarresfranklin/HotelReviewSentimentAnalysisLSTM" class="btn">Reseñas con LSTM</a>
+    <img src="lstm.png" alt="Imagen de reseñas con LSTM" />
+    <p>
+      Se entrenó una red neuronal LSTM con embeddings preentrenados para clasificar reseñas de hoteles como positivas o negativas. 
+      Se realizó preprocesamiento exhaustivo del texto y se optimizó la arquitectura para mejorar el rendimiento. 
+      El modelo fue evaluado con métricas como precisión y F1-score. 
+      Este proyecto aplica PLN y Deep Learning en texto real.
+    </p>
+  </div>
 
 </body>
 </html>
